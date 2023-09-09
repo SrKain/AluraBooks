@@ -1,0 +1,238 @@
+.header__burguer-menu {
+    width: 24px;
+    height: 24px;
+    background-image: url("/assets/Menu\ Fechado.png");
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+header {
+    background-color: var(--branco);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.header__container {
+    display: flex;
+    align-items: center;
+    padding-right: 2%;
+}
+
+.container__img {
+    padding: 1em;
+}
+
+.burguer-list {
+    display: none;
+    position: absolute;
+    top: 100%;
+    width: 65vw;
+}
+
+.container__button:checked~.burguer-list {
+    display: block;
+    z-index: 5;
+}
+
+.container__button:checked~.header__burguer-menu {
+    width: 24px;
+    height: 24px;
+    background-image: url("/assets/Menu\ Aberto.png");
+    background-image: linear-gradient(180degr, #002F52, #326589);
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.burguer-list__title,
+.burguer-list__item {
+    padding: 1em;
+    background-color: var(--branco);
+
+}
+
+.burguer-list__title {
+    color: var(--orange);
+    font-family: var(--font-list-menu-title);
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.burguer-list__link {
+    background: var(--blue-gradient, linear-gradient(160deg, #002F52 0%, #326589 100%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: var(--font-list-menu-title);
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.container__button {
+    display: none;
+}
+
+.container__title {
+    display: none;
+}
+
+.options {
+    display: none;
+}
+
+.header__container__text__text {
+    display: none;
+}
+
+.header__burguer-menu {
+    height: 100%;
+}
+
+.burguer__label {
+    height: 100%;
+    padding: 15% 14%;
+}
+
+.container__button:checked~.burguer__label>.header__burguer-menu {
+    background-image: url("/assets/Menu\ Aberto.png");
+}
+
+.container__button:checked~.burguer__label {
+    background: var(--gradient-list-item);
+}
+
+
+
+@media screen and (min-width: 480px) {
+
+    .container__title-b,
+    .container__title {
+        font-family: var(--title-font);
+        font-size: 1.875rem;
+        font-weight: 400;
+        display: inline-block;
+    }
+
+    .container__title-b {
+        font-weight: 700;
+    }
+
+    .options {
+        display: flex;
+        text-transform: uppercase;
+        font-size: 1rem;
+        font-weight: 400;
+        color: var(--black-description);
+        font-family: var(--font-list-menu-title);
+    }
+
+    .options__item {
+        padding: 0 1em;
+        background: var(--blue-gradient);
+
+    }
+
+    .options__link {
+        text-decoration: none;
+        color: var(--black-description);
+    }
+
+    .header__icon-favorite {
+        display: none;
+    }
+
+    .header__burguer-menu {
+        display: none;
+    }
+
+    .options__button:checked~.burguer-list {
+        display: inline-block;
+        width: auto;
+        background: var(--blue-gradient);
+        border: 0.01px solid var(--orange);
+    }
+
+    .options__button {
+        display: none;
+    }
+
+    .burguer__label {
+        display: none;
+    }
+
+    .burguer-list__item:hover>.burguer-list__link {
+        -webkit-text-fill-color: var(--branco);
+        text-decoration: none;
+
+    }
+
+    .burguer-list__item:hover {
+        background: var(--gradient-list-item);
+    }
+
+}
+
+@media screen and (min-width: 768px) {
+    header {
+        display: grid;
+        grid-template-columns: 1fr 2fr 2fr;
+    }
+
+    .header__container {
+        display: flex;
+        justify-content: end;
+        padding-right: 2em;
+    }
+
+    .header__container__text {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+    }
+
+    .header__container__text__text {
+        display: inline-block;
+        font-size: 1.25rem;
+        font-style: normal;
+        font-weight: 400;
+        font-family: var(--font-list-menu-title);
+        color: var(--black-description);
+    }
+
+    .container__title {
+        display: flex;
+    }
+
+    .burguer-list__item:hover>.burguer-list__link {
+        -webkit-text-fill-color: var(--branco);
+        color: var(--branco);
+    }
+
+    .burguer-list__item:hover {
+        border: 0.1px solid var(--orange);
+    }
+
+    .burguer-list__title:hover {
+        background: var(--gradient-list-item);
+    }
+
+    .options__item:hover {
+        display: flex;
+        background: var(--gradient-list-item);
+        color: var(--branco);
+        height: 100%;
+        align-items: center;
+    }
+
+    .options__link:hover {
+        color: var(--branco);
+    }
+
+}

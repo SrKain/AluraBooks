@@ -1,0 +1,37 @@
+@import url("/styles/header.css");
+@import url("/styles/banner.css");
+@import url("/styles/topics.css");
+@import url("/styles/carousel.css");
+@import url("/styles/contact.css");
+@import url("/styles/footer.css");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --cor-de-fundo: #ebecee;
+    --branco: #ffffff;
+    --orange: #EB9B00;
+    --blue: #002F52;
+    --gray: #858585;
+    --bold-gray: #474646;
+    --light-gray: #F9F9F9;
+    --black-description: rgba(0, 0, 0, 0.85);
+    --gradient-list-item: linear-gradient(97.54deg, #002F52 35.49%, #326589 165.37%);
+    --font-list-menu-title: 'Poppins', sans-serif;
+    --title-font: 'Josefin Sans', sans-serif;
+}
+
+body {
+    background-color: var(--cor-de-fundo);
+    overflow-x: hidden;
+}
+
+.bottom {
+    background-color: var(--branco);
+    padding-top: 1em;
+    font-family: var(--font-list-menu-title)
+}

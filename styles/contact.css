@@ -1,0 +1,86 @@
+.contact {
+    background-color: var(--branco);
+    padding: 1em;
+    font-family: var(--font-list-menu-title);
+}
+
+.contact__title {
+    background: var(--gradient-list-item);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 1.125rem;
+    font-weight: 600;
+}
+
+.contact__text {
+    background: var(--gradient-list-item);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 1em 0;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 300;
+}
+
+.contact__input {
+    background: transparent;
+    border: 1.5px solid var(--blue);
+    border-radius: 1.5rem;
+    padding: 1em 1em;
+    width: 90%;
+}
+
+.contact__input::placeholder {
+    background: url("/assets/Email.svg") no-repeat;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    padding: 1.5em;
+    background-position: left;
+    color: var(--blue);
+    padding-left: 2em;
+}
+
+@media screen and (min-width: 480px) {
+    .contact {
+        display: flex;
+        width: 75vw;
+        justify-content: space-between;
+        align-items: center;
+        gap: 3em;
+    }
+
+    .bottom {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100vw;
+    }
+
+    .contact__title {
+        display: flex;
+        font-size: 1.5rem;
+        font-weight: 500;
+        justify-content: start;
+    }
+
+    .contact__input {
+        width: 40%;
+        height: 30%;
+    }
+
+    .contact__text {
+        font-size: 1rem;
+        text-align: start;
+        margin: 0;
+    }
+
+    .contact__container {
+        display: flex;
+        flex-direction: column;
+        padding: 3em;
+        gap: 2em;
+    }
+}
