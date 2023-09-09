@@ -6,3 +6,5 @@ Nesse projeto, foram usadas tecnologias como o swiper.js, que se trata de um "pl
 Foi utilizado também um "truque" nos menus hambuguer, onde foi utilizado CSS para ocultar e revelar os menus do header, normalmente faz-se uso do javascript ou outros motores do tipo, entretanto, para que fosse utilizado o menos possível de javascript, já que esse projeto não tem foco no javascript e sim no HTML e CSS, usei o CSS para exercer essa função, o que acabou economizando tempo e tornando o código simples!
 
 Esse é o primeiro projeto "grande" que eu executo, levei mais tempo do que gostari, porém fiz com muito capricho e cuidado, senti uma grande evolução minha no entendimento das ferramentas HTML e CSS, de forma que ao menos essas partes foram desenvolvidas ainda mais rápido meus outros projetos.
+
+Vale ressaltar também que esse foi um projeto muito caprichado na parte de acessiblidade e responsividade, ou seja, existe um design diferente e detalhado para cada tipo de tela, smartphone, Tablet e Desktop.
